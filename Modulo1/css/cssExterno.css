@@ -1,0 +1,13 @@
+/* comentario de css, diferente al de html */
+body{
+    background-color: beige;
+    color: red;
+}
+
+h1{
+    color:green;
+} 
+p{
+    color: blue;
+    font-size: 20px;
+}
