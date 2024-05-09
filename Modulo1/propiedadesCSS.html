@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades CSS</title>
+    <style>
+        :root{
+            font-size: 20px;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+            font-weight: 100; /*<b>*/
+        }
+        p{
+            font-size: 1.5rem /*root element's font size*/;
+            /*root font size 26
+            * 0.5rem = 13px
+            diferencia con em (en vez de rem)
+            em "relativo al elemento padre"
+
+            https://theodorusclarence.com/blog/btb-rem-em
+
+            */
+        }
+        p strong{
+            color:red;
+        }
+        h1 strong{ /*selectores descendintes*/
+            color:blue;
+        }
+        strong,u{ /*selectores grupales*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propiedades <strong>CSS</strong></h1>
+    <p>
+        Lorem <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit. Numquam cum praesentium nisi fugiat laudantium ratione deserunt perferendis, ipsum, asperiores nemo delectus ad! Autem, perferendis sapiente ullam iste inventore dicta voluptatum.
+    </p>
+    <p>Lorem <u>ipsum dolor sit</u> amet consectetur adipisicing elit. Ad officia dolorem cumque tenetur, temporibus quisquam saepe nisi esse adipisci quia ratione sit fugiat unde sapiente deserunt laboriosam? Ullam, dolorem velit?</p>
+
+    <div><u>hola</u></div>
+
+    <p style="font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora atque harum, ipsam quos facere pariatur animi fuga aliquam non neque. Similique vel ipsa dolorem, quo error cupiditate non eveniet?</p>
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: italic;font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora atque harum, ipsam quos facere pariatur animi fuga aliquam non neque. Similique vel ipsa dolorem, quo error cupiditate non eveniet?</p>
+
+    <!-- font shorthand -->
+    <!-- https://www.w3schools.com/css/css_font_shorthand.asp -->
+    <p style="font: 20px italic 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora atque harum, ipsam quos facere pariatur animi fuga aliquam non neque. Similique vel ipsa dolorem, quo error cupiditate non eveniet?</p>
+    <p style="font:italic 20px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora atque harum, ipsam quos facere pariatur animi fuga aliquam non neque. Similique vel ipsa dolorem, quo error cupiditate non eveniet?</p>
+    <p style="font:20px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora atque harum, ipsam quos facere pariatur animi fuga aliquam non neque. Similique vel ipsa dolorem, quo error cupiditate non eveniet?</p>
+</body>
+</html>
