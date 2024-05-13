@@ -7,10 +7,6 @@ body{
     margin:0px 0px 0px 100px; /*top right bottom left*/
 }
 
-h1,h3{
-    font-family: "MuseoModerno", sans-serif;
-}
-
 h1,h2,h3{
     color:#0a2ff1;
 }
@@ -43,4 +39,15 @@ hr{
     margin-bottom: 100px;
     margin-top:0px;
     margin-left:-100px;
+}
+
+.hashtag{
+    font-weight: bold;
+    font-size: 199px;
+    color:#8a9af1;
+    margin: 0px 0px 0px -100px;
+}
+
+.font-museo{
+    font-family: "MuseoModerno", sans-serif;
 }
