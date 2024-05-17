@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modulo 2</title>
     <link rel="stylesheet" href="">
+    <style>
+        td{
+            padding:30px;
+        }
+
+        .div1{
+            width: 300px;
+            height: 100px;
+            border: 1px solid #2c2cd8;
+        }
+
+        .div2{
+            width: 300px;
+            height: 100px;
+            border: 1px solid #d43e2a;
+            padding: 50px;
+        }
+        
+        .div3{
+            width: 300px;
+            height: 100px;
+            border: 1px solid #2c2cd8;
+            box-sizing: border-box;
+        }
+
+        .div4{
+            width: 300px;
+            height: 100px;
+            border: 1px solid #d43e2a;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,6 +51,8 @@
     <h2>Anclas internas</h2>
     <p>Parte del uso (o llamado al ancla):</p>
     <a href="#pie">Ir sl pie de página</a>
+
+    <a href="contacto.html#pie">Ir a contacto pero al ancla pie</a>
 
     p*20>lorem
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, delectus! Nesciunt, incidunt! Possimus ab fugit quibusdam praesentium, autem molestiae minus. Sapiente ad ipsa velit eos eligendi totam! Minus, aspernatur dicta.
@@ -103,6 +138,116 @@ Aliquid quasi suscipit doloremque laborum sed aut culpa autem quidem, impedit ex
 
     <h2>Indicadores visuales</h2>
     <a href="https://es.wikipedia.org/wiki/Tormentas_solares_de_mayo_de_2024" target="_blank" title="Info tormetas solares">Wikipedia de tormentas solares</a>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<h2>Width height margin padding</h2>
+
+<table border="1" cellspacing="0" style="margin: 30px; height: 200px;">
+    <tr>
+        <td>texto1</td>
+        <td>texto2</td>
+        <td style="padding: 10px;">texto3</td>
+    </tr>
+    <tr>
+        <td>texto1 fila2</td>
+        <td style="padding-left: 10px ;">texto2 fila2</td>
+        <td>texto2 fila2</td>
+    </tr>
+</table>
+
+
+<h2>Box sizing</h2>
+<h3>Con: <br>box-sizing: content-box;</h3>
+<div class="div1">Div 1</div>
+<br>
+<div class="div2">Div 2</div>
+
+<br><br>
+<h3>Con <br>box-sizing: border-box;</h3>
+<div class="div3">Div 3</div>
+<br>
+<div class="div4">Div 4</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Alineacion de texto</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quasi aliquam in quas consectetur, eos quo itaque, culpa tempora quidem consequatur libero quisquam hic officia, unde iste amet et laboriosam?</p>
+<p style="text-align: right;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum neque unde similique! Tenetur vel ipsa asperiores commodi numquam quo libero magnam molestiae dolores repellendus! Nobis, autem culpa. Eaque, sequi deserunt?</p>
+<p style="text-align: center;">Eaque, consequatur. Velit odio aut delectus consequuntur sit pariatur iste esse necessitatibus amet! Vel necessitatibus dolorem, similique veniam quod, nulla natus, obcaecati nostrum eum explicabo consequuntur! Error beatae numquam facere.</p>
+<p style="text-align: justify;">Animi blanditiis iure iusto ipsum sapiente modi impedit vel harum enim cupiditate doloremque sequi quae natus ex, cum illum consectetur dignissimos quas nesciunt debitis provident a aliquid culpa. Distinctio, accusamus.</p>
+<p style="text-align: justify;text-align-last: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, iusto distinctio magnam tempore eligendi repellendus saepe voluptate maiores temporibus voluptatum a amet aliquid pariatur. A cupiditate nulla necessitatibus assumenda doloribus.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>text transform</h2>
+<p style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio, quis eligendi assumenda optio id recusandae esse totam eaque, commodi doloremque perspiciatis a sit. Recusandae exercitationem soluta id delectus placeat!</p>
+<p style="text-transform: uppercase;">Magnam maiores voluptate modi! Eligendi accusantium debitis accusamus molestiae commodi perferendis minima rem! Reprehenderit, cupiditate illum aliquid numquam aspernatur quod ipsam sunt recusandae explicabo, dolor voluptate ipsa natus rem dolorem!</p>
+<p style="text-transform: lowercase;">TODO EN MAYUSCULA, illo reprehenderit voluptatibus deleniti beatae quisquam nihil recusandae illum numquam eaque quibusdam praesentium, voluptates sequi vitae ab porro iure nesciunt reiciendis, ex molestiae? Blanditiis sit perspiciatis tempore suscipit quas!</p>
+<p style="text-transform: none;"><i>TODO EN MAYUSCULA,illo reprehenderit voluptatibus</i>  deleniti beatae quisquam nihil recusandae illum numquam eaque quibusdam praesentium, voluptates sequi vitae ab porro iure nesciunt reiciendis, ex molestiae? Blanditiis sit perspiciatis tempore suscipit quas!</p>
+<p style="text-transform: none; font-style: italic;">TODO EN MAYUSCULA,illo reprehenderit voluptatibus deleniti beatae quisquam nihil recusandae illum numquam eaque quibusdam praesentium, voluptates sequi vitae ab porro iure nesciunt reiciendis, ex molestiae? Blanditiis sit perspiciatis tempore suscipit quas!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>text decoration</h2>
+<p style="text-decoration: underline;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolor fugiat pariatur officia voluptatem dolorem adipisci, qui omnis mollitia cum placeat optio perferendis, odio voluptate esse incidunt? Sunt, tempore fuga.</p>
+<p style="text-decoration: underline blue;">Nulla doloribus, reprehenderit ullam voluptas veritatis commodi error nostrum dolorem repudiandae exercitationem nihil temporibus quos explicabo quia dicta in qui officia libero, labore autem non! Ab quos amet eius iusto.</p>
+<p style="text-decoration: underline blue 8px; line-height: 25px">Modi, ab odio nam iste vitae illum neque enim corporis nesciunt! Consectetur, doloribus ipsam voluptates dicta corrupti minima voluptas et optio quo nostrum, accusantium hic quam natus neque sit molestias.</p>
+<p style="text-decoration: overline dotted;">Sed dolores veritatis sint voluptate officiis maxime perferendis reprehenderit ducimus cupiditate. Non praesentium est fuga quidem tempore odit. Distinctio perspiciatis possimus explicabo sequi rem consectetur iusto at nam nobis quidem!</p>
+<p style="text-decoration: overline underline wavy; line-height: 30px">Perspiciatis, nostrum saepe, rem voluptatem, reprehenderit assumenda illo ea nihil porro atque recusandae iusto. Dolores culpa cupiditate, quod quidem, numquam porro est tempora error nemo consequatur quos repudiandae laudantium! Architecto.</p>
+<p style="text-decoration: line-through red;">Excepturi enim aspernatur iure eum possimus earum fugiat magnam molestias doloribus culpa facere consectetur provident quia impedit sint quasi, ipsam molestiae ex tenetur minima velit eaque perspiciatis architecto at? Odit!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>IA</h2>
+<h3>https://zzzcode.ai/</h3>
+<h4>Ver sección code generator</h4>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Imagenes</h2>
+<img src="https://images.ctfassets.net/hrltx12pl8hq/6a3E5QhtZ1x61c8YiJzeTU/091618372d6a3e68b4286c121043c5d7/thumb_july22_08.jpg"
+    style="width: 50%; height: 50%;"
+    alt="Foto de pelicano inflable">
+<img src="https://images.ctfassets.net/hrltx12pl8hq/6SqqQD3KfNrJk77ezjikrc/d9b3697553c1ee67ba1b509e1a648556/Petal-Power_Thumb.jpg" 
+    style="width: 50%; height: 50%; min-width: 100px; max-width: 200px;"
+    alt="Flores">
+<img src="Coffe-Break-Thumbnail.jpg" 
+    style="width: 50%; height: 50%; min-width: 100px; max-width: 200px;"
+    alt="Flores">    
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Foto con link integrado</h2>
+<a href="https://www.shutterstock.com/featured-collections/pausa-para-el-323387491">
+    <img src="Coffe-Break-Thumbnail.jpg" style="width: 50%; height: 50%; min-width: 100px; max-width: 200px;" alt="Flores">
+</a>
+ 
+<p>&nbsp;</p>
+<h2>Foto como fondo de contendor</h2>
+<div style="width: 300px; height: 100px;
+        background-image: url(https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_light_1x_r5.png);"
+    ></div>
+    <div style="width: 300px; height: 100px;
+    background-image: url(Coffe-Break-Thumbnail2.jpg);background-repeat: no-repeat;"
+></div>    
+<div style="width: 300px; height: 100px;
+       "
+    ></div>
+    <div style="width: 300px; height: 100px;
+    background-image: url(Coffe-Break-Thumbnail2.jpg);background-repeat: repeat-x;"
+></div>    
+<div style="width: 300px; height: 100px;
+       "
+    ></div>
+    <div style="width: 300px; height: 100px;
+    background-image: url(Coffe-Break-Thumbnail2.jpg);background-repeat: repeat-y;"
+></div>   
+ 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    <div style="width: 300px; height: 100px;
+    background-image: url(Coffe-Break-Thumbnail2.jpg);"
+><img src="Coffe-Break-Thumbnail.jpg" width="100px" height="50px">
+</div>    
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
