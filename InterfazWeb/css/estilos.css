@@ -4,10 +4,13 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size:16px; /*predefinido*/
+    color:#2f2f2f
 }
 
 body{
   margin: 0;
+  background-color: #eaeaea;
 }
 
 .roboto-bold {
@@ -20,6 +23,59 @@ body{
     font-style: normal;
 }
 
+nav{
+  border-top: 8px solid #fcee21;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li a{
+  text-decoration: none;
+  color: gray;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+h1{
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, b{
+  font-size: 4rem; /*evaluar si cambiar por "em" */
+  font-weight: 700;
+}
+
+h1 b{
+  font-size: 117px;
+}
+
+h2{
+  background-color: #fcee21;
+  font-size: 1.6rem;
+}
+
+h3{
+  background-color: #fcee21;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 3.3rem;
+}
+
+p{
+  font-size: 1.75rem;
+}
+
+ol li{
+  font-size: 2rem;
+}
+
 footer{
-  background-color: yellow;
+  background-color: #fcee21;
 }
