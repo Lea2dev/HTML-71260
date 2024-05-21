@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 3</title>
+    <style>
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bordes</h2>
+    <div style="margin:5px;width: 200px;height: 50px; border: 10px solid black;">Elemento</div>
+    <div style="margin:5px;width: 200px;height: 50px; border: 10px dotted black;">Elemento</div>
+    <div style="margin:5px;width: 200px;height: 50px; border: 10px outset black;">Elemento</div>
+    <div style="margin:5px;width: 200px;height: 50px; border: 10px inset black;">Elemento</div>
+    <div style="margin:5px;width: 200px;height: 50px; border: 10px double black;">Elemento</div>
+    <div style="margin:5px;width: 200px;height: 50px; border: 10px solid black;">Elemento</div>
+    
+    <h2>Estilos de lista</h2>
+
+    <ul type="square">
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+    </ul>
+
+    
+    <ul style="list-style: lower-greek;">
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+    </ul>
+
+
+    <h2>Formularios</h2>
+
+    <p>Dos tipos, envio de info - obtencion y muestra de info</p>
+
+    <form action="sendmail.php" method="post">
+        <!-- aca iran los campos del formulario-->
+        <label for="nombre" aria-placeholder="nombre completo">Nombre:
+            <input type="text" name="nombre" id="nombre" maxlength="10" placeholder="completar nombre">
+        </label>
+        <input type="password" name="contrasena" id="contrasena">
+        <input type="text" name="mail" id="mail" required placeholder="su mail">
+        <input type="email" name="mail" id="mail" required placeholder="su mail">
+        Prefiere recibir mails publicitarios:<br>
+        <input type="radio" name="preferencia" id="" style="display: inline;" value="1">Si
+        <input type="radio" name="preferencia" id="" style="display: inline;" value="0">No
+
+        <div>Desea que lo llamemos</div>
+        <input type="radio" name="preferencia2" id="" style="display: inline;" value="1">Si
+        <input type="radio" name="preferencia2" id="" style="display: inline;" value="0">No
+
+        <input type="file" name="" id="">
+        <select>
+            <option value="opcion1">Opcion 1 </option>
+            <option value="opcion2">Opcion 2 </option>
+        </select>
+        
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Titulo del marco</legend>
+            <input type="email" name="" id="">
+            <input type="button" value="Enviar">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
