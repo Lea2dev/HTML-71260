@@ -9,9 +9,9 @@
 <body>
     
     <nav>
-        wwwwapas(imagen)
-        <ul>
-            <li>
+        <div class="coiny-regular" style="display:inline;font-size: 3rem;">wwwapas</div>
+        <ul style="display:inline;float:right">
+            <li style="display:inline;">
                 <a href="#">Inicio</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#contacto">Contacto</a>
@@ -21,9 +21,14 @@
     </nav>
 
     <header>
-        <h1>somos <b>wwwapas</b></h1>
-        <h2>social media managers | creadoras de contenido</h2>        
-        <p>Nos encargamos de construir, gestionar y administrar la comunidad online de tu marca, empresa o negocio. <strong>¡Creamos relaciones estables y duraderas con tus clientes!</strong></p>
+        <section>
+            <h1>somos <b>wwwapas</b></h1>
+            <h2>social media managers | creadoras de contenido</h2>        
+            <p>Nos encargamos de construir, gestionar y administrar la comunidad online de tu marca, empresa o negocio. <strong>¡Creamos relaciones estables y duraderas con tus clientes!</strong></p>
+        </section>
+        <section>
+            <img src="img/foto.png" alt="Sofi y Juli" style="width: 90%;">
+        </section>
     </header>
 
     <main>
@@ -38,7 +43,7 @@
         </section>
         <hr>
         <section>
-            <!-- seccion imagen "redonda"-->
+            <img src="img/img-servicios.png" alt="">
         </section>
         <section id="servicios">
             <h4>SERVICIOS</h4>
@@ -60,6 +65,18 @@
 
         <section>
             <!-- seccion form-->
+            <form action="php/contacto.php" method="post">
+                <label for="nombre">Nombre *</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Nombre y apellido">
+                <label for="mail">E-Mail *</label>
+                <input type="text" name="email" id="mail" placeholder="mail@dominio.com.ar" required>
+                <label for="comentario">Mensaje *</label>
+                <textarea name="comentarios" id="commentario" cols="30" rows="10"></textarea>
+                <div>
+                    <button type="submit">Enviar consulta</button>
+                    <button type="reset" name="Borrar" style="float:right">Borrar</button></div>
+                </div>
+            </form>
         </section>
      
     </main>
