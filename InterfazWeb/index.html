@@ -22,7 +22,7 @@
 
     <header>
         <section>
-            <h1>somos <b>wwwapas</b></h1>
+            <h1>somos <br> <b>wwwapas</b></h1>
             <h2>social media managers | creadoras de contenido</h2>        
             <p>Nos encargamos de construir, gestionar y administrar la comunidad online de tu marca, empresa o negocio. <strong>¡Creamos relaciones estables y duraderas con tus clientes!</strong></p>
         </section>
@@ -59,18 +59,18 @@
         </section>
             
         <section id="contacto">
-            <h4>¿Quéres que nos contactemos con vos?</h4>
-            <p>Envianos tu consulta >></p>
+            <h4 class="negro-inv">¿Quéres que nos contactemos con vos?</h4>
+            <p class="amarillo">Envianos tu consulta >></p>
         </section>
 
         <section>
             <!-- seccion form-->
             <form action="php/contacto.php" method="post">
-                <label for="nombre">Nombre *</label>
+                <label for="nombre">Nombre <span class="rojo">*</span></label>
                 <input type="text" name="nombre" id="nombre" required placeholder="Nombre y apellido">
-                <label for="mail">E-Mail *</label>
+                <label for="mail">E-Mail <span class="rojo">*</span></label>
                 <input type="text" name="email" id="mail" placeholder="mail@dominio.com.ar" required>
-                <label for="comentario">Mensaje *</label>
+                <label for="comentario">Mensaje <span class="rojo">*</span></label>
                 <textarea name="comentarios" id="commentario" cols="30" rows="10"></textarea>
                 <div>
                     <button type="submit">Enviar consulta</button>
@@ -90,7 +90,7 @@
     </aside>
 
     <footer>
-        <p>wwwwapas</p> 
+        <p class="coiny-regular">wwwwapas</p> 
         <a href="mailto:wwwwapas_sm@gmail.com">wwwwapas_sm@gmail.com</a>   
     </footer>
 

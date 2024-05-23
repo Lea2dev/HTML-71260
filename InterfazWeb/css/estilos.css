@@ -13,6 +13,14 @@ body{
   background-color: #eaeaea;
 }
 
+.rojo{
+  color:rgb(235, 11, 11);
+}
+.amarillo{
+  background-color: #fcee21;
+  /* display: inline; */
+}
+
 .roboto-bold {
   font-weight: 700;
   font-style: normal;
@@ -39,9 +47,13 @@ ul li a{
 }
 
 h1{
-  font-family: "Coiny", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+h1 b{
+  font-family: "Coiny", system-ui;
+  line-height: 1rem;
 }
 
 h1, b{
@@ -65,17 +77,54 @@ h3{
 }
 
 h4{
+  display: inline;
+  line-height: 5.5rem;
   font-size: 3.3rem;
+  background-color: #000;
+  color: #ebebeb;
 }
 
 p{
   font-size: 1.75rem;
 }
 
+ol{
+  list-style-position: inside;
+}
+
 ol li{
   font-size: 2rem;
+  margin-top: 1.5rem;
 }
+
+ol li:nth-last-child(1){
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: #fcee21;
+}
+
+input,label,textarea{
+  display: block;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+label,button{
+  padding-top: 1.2rem;
+}
+textarea{
+  margin-bottom: 1.2rem;
+}
+button{
+  background-color: #000;
+  color: #FFF;
+  font-size: 1.5rem;
+  padding: 8px 26px;
+  border: none;
+}
+
 
 footer{
   background-color: #fcee21;
+  font-size: 2rem;
 }
