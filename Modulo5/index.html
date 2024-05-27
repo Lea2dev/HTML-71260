@@ -15,8 +15,25 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        /*flex-direction: column;*/
+    }
+
+@media print{
+
+    h2{
+        display: none; /*hace que no se muestre el elemento */
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    main{
         flex-direction: column;
     }
+}
+
+
 </style>
 <body>
     
@@ -26,6 +43,39 @@
     <section class="espacio" id="rojo">box 2</section>
     <section class="espacio" id="azul">box 3</section>
 </main>
+
+<h2>Flex explicado: <a href="https://codepen.io/LeandroPais/pen/gOQLqGa">IR</a></h2>
+
+
+<h2>Media queries <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries/Using_media_queries">IR</a></h2>
+
+<h2>iframe</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h_KH5nKQGZc?si=SHq-yg3jBMt0dgAz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.educacionit.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<table border="1">
+    <thead>
+        <td colspan="2">Fila1 1</td>
+<!--        <td>Fila1 2</td>  -->
+        <td>Fila1 3</td>
+    </thead>
+    <tr>
+        <td rowspan="2">Fila2 1</td>
+        <td>Fila2 2</td>
+        <td>Fila2 3</td>
+    </tr>
+    <tr>
+<!--       <td>Fila3 1</td> -->
+        <td>Fila3 2</td>
+        <td>Fila3 3</td>
+    </tr>
+
+
+    
+</table>
+
+<br><br><br><br><br>
 
 </body>
 </html>
