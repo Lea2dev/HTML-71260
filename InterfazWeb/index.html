@@ -9,9 +9,9 @@
 <body>
     
     <nav>
-        <div class="coiny-regular" style="display:inline;font-size: 3rem;">wwwapas</div>
-        <ul style="display:inline;float:right">
-            <li style="display:inline;">
+        <div class="coiny-regular" style="font-size: 3rem;">wwwapas</div>
+        <ul>
+            <li>
                 <a href="#">Inicio</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#contacto">Contacto</a>
@@ -20,68 +20,72 @@
           
     </nav>
 
-    <header>
+    <header class="en-columa">
         <section>
             <h1>somos <br> <b>wwwapas</b></h1>
             <h2>social media managers | creadoras de contenido</h2>        
             <p>Nos encargamos de construir, gestionar y administrar la comunidad online de tu marca, empresa o negocio. <strong>¡Creamos relaciones estables y duraderas con tus clientes!</strong></p>
         </section>
         <section>
-            <img src="img/foto.png" alt="Sofi y Juli" style="width: 90%;">
+            <img id="syj" src="img/foto.png" alt="Sofi y Juli" style="width: 90%;min-width: 200px;">
         </section>
     </header>
 
     <main>
+        <div class="en-columa">
+            <section>
+                <h3>¡Hola! Somos SOFI & JULIA,</h3>
+                <p>las social media managers, las creadoras de contenido, las copywriters, las generadoras de leads, las diseñadoras, las estrategas en marketing digital, las potenciadoras de ventas, el posicionamiento de tu marca. <strong>¡Somos el complemento que necesitás para hacer crecer tu marca! ¡Somos wwwapas!</strong></p>
+            </section>
+            <section>
+                <h3>GESTIONAMOS TUS REDES SOCIALES</h3>
+                <p>La transformación digital no es solo para grandes compañías, todas las empresas deben emprenderla cuanto antes y aquí es donde podemos asistirte. Armamos estrategias a medida para tu empresa, marca o producto. <strong>¡Aumentá tu presencia digital y generá nuevas ventas y contactos!</strong></p>
+            </section>
+        </div>
+            <hr>
+        <div class="en-columa">  
+            <section>
+                <img id="mundo" src="img/img-servicios.png" alt="">
+            </section>
+            <section id="servicios">
+                <h4>SERVICIOS</h4>
+                <ol>
+                    <li>Análisis de perfil (Benchmarking)</li>
+                    <li>Revisión y activación de canales</li>
+                    <li>Gestión, creación y diseño de contenido</li>
+                    <li>Repuestas a mensajes y consultas</li>
+                    <li>Segmentación de promociones según el público objetivo de la pauta publicitaria</li>
+                    <li>Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
+                    <li>¡Empezamos a comunicar!</li>
+                </ol>
+            </section>
+        </div>
+        <div class="en-columa">       
+            <section id="contacto">
+                <h4 class="negro-inv">¿Quéres que nos contactemos con vos?</h4>
+                <br>
+                <p class="amarillo">Envianos tu consulta >></p>
+            </section>
 
-        <section>
-            <h3>¡Hola! Somos SOFI & JULIA,</h3>
-            <p>las social media managers, las creadoras de contenido, las copywriters, las generadoras de leads, las diseñadoras, las estrategas en marketing digital, las potenciadoras de ventas, el posicionamiento de tu marca. <strong>¡Somos el complemento que necesitás para hacer crecer tu marca! ¡Somos wwwapas!</strong></p>
-        </section>
-        <section>
-            <h3>GESTIONAMOS TUS REDES SOCIALES</h3>
-            <p>La transformación digital no es solo para grandes compañías, todas las empresas deben emprenderla cuanto antes y aquí es donde podemos asistirte. Armamos estrategias a medida para tu empresa, marca o producto. <strong>¡Aumentá tu presencia digital y generá nuevas ventas y contactos!</strong></p>
-        </section>
-        <hr>
-        <section>
-            <img src="img/img-servicios.png" alt="">
-        </section>
-        <section id="servicios">
-            <h4>SERVICIOS</h4>
-            <ol>
-                <li>Análisis de perfil (Benchmarking)</li>
-                <li>Revisión y activación de canales</li>
-                <li>Gestión, creación y diseño de contenido</li>
-                <li>Repuestas a mensajes y consultas</li>
-                <li>Segmentación de promociones según el público objetivo de la pauta publicitaria</li>
-                <li>Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
-                <li>¡Empezamos a comunicar!</li>
-            </ol>
-        </section>
-            
-        <section id="contacto">
-            <h4 class="negro-inv">¿Quéres que nos contactemos con vos?</h4>
-            <p class="amarillo">Envianos tu consulta >></p>
-        </section>
-
-        <section>
-            <!-- seccion form-->
-            <form action="php/contacto.php" method="post">
-                <label for="nombre">Nombre <span class="rojo">*</span></label>
-                <input type="text" name="nombre" id="nombre" required placeholder="Nombre y apellido">
-                <label for="mail">E-Mail <span class="rojo">*</span></label>
-                <input type="text" name="email" id="mail" placeholder="mail@dominio.com.ar" required>
-                <label for="comentario">Mensaje <span class="rojo">*</span></label>
-                <textarea name="comentarios" id="commentario" cols="30" rows="10"></textarea>
-                <div>
-                    <button type="submit">Enviar consulta</button>
-                    <button type="reset" name="Borrar" style="float:right">Borrar</button></div>
-                </div>
-            </form>
-        </section>
-     
+            <section>
+                <!-- seccion form-->
+                <form action="php/contacto.php" method="post">
+                    <label for="nombre">Nombre <span class="rojo">*</span></label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Nombre y apellido">
+                    <label for="mail">E-Mail <span class="rojo">*</span></label>
+                    <input type="text" name="email" id="mail" placeholder="mail@dominio.com.ar" required>
+                    <label for="comentario">Mensaje <span class="rojo">*</span></label>
+                    <textarea name="comentarios" id="commentario" cols="30" rows="10"></textarea>
+                    <div>
+                        <button type="submit">Enviar consulta</button>
+                        <button type="reset" name="Borrar" style="float:right">Borrar</button></div>
+                    </div>
+                </form>
+            </section>
+        </div>    
     </main>
    
-    <aside>
+    <aside class="en-columa">
         <!-- imagenes pie-->
         <div><img src="img/dribbble-icon.png" alt=""></div>
         <div><img src="img/facebook-icon.png" alt=""></div>
@@ -89,7 +93,7 @@
         <div><img src="img/linkedin-icon.png" alt=""></div>
     </aside>
 
-    <footer>
+    <footer class="en-columa">
         <p class="coiny-regular">wwwwapas</p> 
         <a href="mailto:wwwwapas_sm@gmail.com">wwwwapas_sm@gmail.com</a>   
     </footer>

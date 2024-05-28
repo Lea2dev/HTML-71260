@@ -18,7 +18,7 @@ body{
 }
 .amarillo{
   background-color: #fcee21;
-  /* display: inline; */
+  display: inline;
 }
 
 .roboto-bold {
@@ -33,6 +33,10 @@ body{
 
 nav{
   border-top: 8px solid #fcee21;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 ul{
@@ -54,6 +58,7 @@ h1{
 h1 b{
   font-family: "Coiny", system-ui;
   line-height: 1rem;
+  font-size: 7rem;
 }
 
 h1, b{
@@ -61,16 +66,12 @@ h1, b{
   font-weight: 700;
 }
 
-h1 b{
-  font-size: 117px;
-}
-
-h2{
+h2{display: inline;
   background-color: #fcee21;
   font-size: 1.6rem;
 }
 
-h3{
+h3{display: inline;
   background-color: #fcee21;
   font-weight: 700;
   font-size: 2rem;
@@ -86,7 +87,10 @@ h4{
 
 p{
   font-size: 1.75rem;
+  display: block;
 }
+
+img{width: 100%;}
 
 ol{
   list-style-position: inside;
@@ -123,8 +127,45 @@ button{
   border: none;
 }
 
+.en-columa{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.en-columa section{
+  margin: 0 1.5rem 0 1.5rem;
+}
 
 footer{
   background-color: #fcee21;
   font-size: 2rem;
 }
+
+
+@media screen and (max-width:980px) {
+  #syj{
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  :root{
+    font-size: 10px;
+  }
+
+  .en-columa{
+    flex-direction: column;
+  }
+
+}
+
+
+/*
+@media screen and (max-width:720px) {
+  #mundo{
+    display: none;
+  }
+}
+*/
